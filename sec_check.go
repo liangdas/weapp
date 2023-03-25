@@ -114,6 +114,7 @@ func (cli *Client) mediaCheckAsync(api, token, mediaURL string, mediaType MediaT
 	params := requestParams{
 		"media_url":  mediaURL,
 		"media_type": mediaType,
+		"version": 2,
 	}
 
 	res := new(CheckMediaResponse)
